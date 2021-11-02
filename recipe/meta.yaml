@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - clease-gui=clease_gui.cli.main_cli:clease_gui_cli
@@ -24,7 +24,8 @@ requirements:
     - python >=3.7
     - ipython
     - jupyter
-    - clease >=0.10.5
+    - ipywidgets
+    - clease >=0.10.6
     - pandas
     - matplotlib-base
     - {{ pin_compatible('numpy') }}
@@ -39,6 +40,7 @@ test:
   commands:
     - pip check
     - clease-gui --version  # Test the CLI runs
+    - clease-gui new  # Test we can copy the jupyter notebook
 
 about:
   home: https://gitlab.com/computationalmaterials/clease-gui/
