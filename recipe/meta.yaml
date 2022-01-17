@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - clease-gui=clease_gui.cli.main_cli:clease_gui_cli
@@ -25,7 +25,7 @@ requirements:
     - ipython
     - jupyter
     - ipywidgets
-    - clease >=0.10.6
+    - clease >=0.10.7
     - pandas
     - matplotlib-base
     - {{ pin_compatible('numpy') }}
