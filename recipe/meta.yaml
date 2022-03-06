@@ -31,6 +31,7 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - click >=8.0.0
     - ase >=3.20
+    - nglview
 
 test:
   imports:
