@@ -1,5 +1,5 @@
 {% set name = "clease-gui" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 49b155e41b8683e7e8dbd6b613196445eafc4921a809023e3ed01a404d92a2cc
+  sha256: 14f4ee14277368a6d84f4b720fc9b71a41a28307d95e78d72d7c50a8675b503a
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.7
     - ipython
-    - jupyter
+    - jupyterlab
     - ipywidgets
     - clease >=0.10.7
     - pandas
