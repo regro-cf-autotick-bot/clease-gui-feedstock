@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.7
     - ipython
-    - jupyter
+    - jupyterlab
     - ipywidgets
     - clease >=0.10.7
     - pandas
@@ -32,6 +32,7 @@ requirements:
     - click >=8.0.0
     - ase >=3.20
     - nglview
+    - tk
 
 test:
   imports:
