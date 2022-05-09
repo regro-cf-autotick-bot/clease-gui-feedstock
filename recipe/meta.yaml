@@ -1,5 +1,5 @@
 {% set name = "clease-gui" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 84474d82c05c3a883ae48bb26e3cfb8f908fda4a534c03644f197b91dae1e562
+  sha256: 9be8d194b2dc2ff7a383f7ea3f76296aaed4e6056000e779a8a9eccf79e7d87a
 
 build:
   noarch: python
