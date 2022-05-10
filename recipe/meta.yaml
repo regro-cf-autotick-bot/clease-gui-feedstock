@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - clease-gui=clease_gui.cli.main_cli:clease_gui_cli
@@ -33,6 +33,7 @@ requirements:
     - ase >=3.20
     - nglview
     - packaging
+    - attrs
 
 test:
   imports:
