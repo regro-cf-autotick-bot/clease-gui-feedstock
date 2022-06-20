@@ -25,7 +25,7 @@ requirements:
     - ipython
     - jupyterlab
     - ipywidgets
-    - clease >=0.11.5
+    - clease >=0.11.6
     - pandas
     - matplotlib-base
     - {{ pin_compatible('numpy') }}
