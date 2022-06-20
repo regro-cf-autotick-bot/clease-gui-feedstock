@@ -1,5 +1,5 @@
 {% set name = "clease-gui" %}
-{% set version = "0.1.11" %}
+{% set version = "0.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7d668e6f4dbf36a1b2f4d9aa244213764f4c659c82f6839af4dd05c843da8b5f
+  sha256: f1b145a29e4d46933312cfd3b81483cb4c57ba16a98ae2c93b80fcc129683bf3
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - ipython
     - jupyterlab
     - ipywidgets
-    - clease >=0.11.5
+    - clease >=0.11.6
     - pandas
     - matplotlib-base
     - {{ pin_compatible('numpy') }}
